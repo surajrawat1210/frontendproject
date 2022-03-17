@@ -1,0 +1,398 @@
+body {
+    margin: 0px;
+    padding:0px;
+    font-family: sans-serif;
+    font-size: 30px;
+}
+
+/* Body Header */
+
+#body-header {
+    height: 65vh;
+    min-width:1000px;
+    opacity: 0.8;
+    background-image: url('https://ninjasfiles.s3.amazonaws.com/asset_0000000000000020_1549743985_macbook_mouse.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    padding-top: 1.2rem;
+}
+
+/* Horizontal Lists */
+
+.horizontal-list {
+    list-style: none;
+    padding-left: 0px;
+    margin: 0px;
+}
+
+.horizontal-list li {
+    display: inline-block;
+    margin: 0px 8px 8px 0px;
+    font-weight: 100;
+    font-size: 0.9rem;
+}
+
+
+.horizontal-list li a {
+    color: white;
+    text-decoration: none;
+}
+
+.nav-menu li a {
+    transition: color 0.5s, border-bottom 4s;
+}
+
+.nav-menu li a:hover {
+    color: lightgrey;
+    border-bottom: 1px solid black;
+}
+
+.text-center {
+    text-align: center;
+}
+
+/* Name and Social Icons*/
+
+#name-social-container {
+    margin-top: 20vh;
+}
+
+#my-name {
+    font-size: 3rem;
+    letter-spacing: 0.1rem;
+    color: white;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+
+
+.social-icons li a i {
+    /*color: red;*/
+    padding: 10px;
+    font-size: 1rem;
+    border-radius: 50%;
+}
+
+
+.social-icons li a i:hover {
+    box-shadow: 0px 0px 6px 4px rgba(230, 196, 196, 0.3);
+}
+
+/*Section Classes*/
+
+section {
+    width: 100%;
+    /*height: 75vh;*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+section:nth-child(2n) {
+    background-color: #9e9b9b29;
+}
+
+section:nth-child(2n + 1) {
+    background-color: white;
+}
+
+/* skills */
+#skills
+{
+    color:blue;
+    padding-bottom:3rem;
+}
+.language
+{
+    /* box-sizing: border-box; */
+    border:1px solid black;
+    width: 70%;
+    height: 6rem;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding:20px;
+    padding-bottom:2rem;
+    
+}
+.language>div
+{
+    
+    font-size: 1rem; 
+    width: 100px;
+    margin:1px;
+    height:30px;
+    border:1px solid black;
+    border-radius: 0.8rem;
+    background-color: #d3d1d4;
+    box-shadow:2px 2px 2px  gray;
+}
+.skill-indicator1
+{
+    color:white;
+    font-weight: bold;
+    box-sizing: border-box;
+    padding:.4rem;
+    
+    /* width:70%;
+    height: 100%; */
+    border-top-left-radius: 0.8rem;
+    border-bottom-left-radius: 0.8rem;
+    background-color: red;
+}
+.zero
+{
+    width: 85%;
+    height: inherit;
+}
+.first
+{
+    width: 85%;
+    height: inherit;
+}
+.second
+{
+    width: 90%;
+    height: inherit;
+}
+.third
+{
+    width: 45%;
+    height: inherit;
+}
+.fourth
+{
+    width: 85%;
+    height: inherit;
+}
+.fifth
+{
+    width: 35%;
+    height: inherit;
+}
+
+.sixth
+{
+    width: 50%;
+    height: inherit;
+}
+.seven
+{
+    width: 89%;
+    height: inherit;
+}
+
+.zero,.first
+{
+    
+    background-color: #294da2;
+}
+.second,.fifth
+{
+    background-color: #ef471a;
+}
+.third,.sixth
+{
+    background-color: #0c7a6b;
+}
+.fourth,.seven
+{ 
+    background-color:#8f6781;
+}
+/*About Section*/
+
+#about {
+    height: auto;
+    width: 100%;
+    position: relative;
+}
+
+#my-image {
+    height: 12rem;
+    width: 12rem;
+    margin: auto;
+    margin-top: -17vh;
+}
+
+#my-image img {
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    border: 3px solid white;
+    box-shadow: 1px 1px 10px 2px lightgrey;
+}
+
+#about-para {
+    padding: 10px;
+    width: 70%;
+    height: 100%;
+    margin: auto;
+    font-family: Arial, Helvetica, sans\-serif;
+    text-align: justify;
+    color: grey;
+    line-height: 28px;
+    font-weight: 100;
+    font-size: 1.1rem;
+}
+
+.text-highlight {
+    color: #2857a4;
+    font-weight: 600;
+	padding:2rem;
+    
+}
+.portfolio-heading
+{
+    margin:2rem 2rem 2rem;
+    color:blue;
+    padding:1rem;
+}
+.portfolio-image
+{
+    display:flex;
+    flex-direction:row;
+    flex-wrap:wrap;
+    justify-content:center;
+    
+}
+.portfolio-image img
+{
+ width:30%;
+ min-width:220px;
+ 
+}
+#contact
+{
+    color:white;
+    background-image:linear-gradient(to left,#2857a4,#403066);
+    a:100%;
+    display:flex;
+    flex-wrap:wrap;
+    flex-direction:row;
+    justify-content:center;
+    
+}
+/* .contact>div
+{
+    width:40%;
+} */
+.location::before
+{
+    content:"\f609";
+}
+.contact-heading
+{
+    text-align:center;
+    padding:2.2rem;
+    width:90%;
+    
+/*     border:1px solid red; */
+}
+.form-details
+{
+    fill: none;
+    background: transparent;
+   
+    align-self:flex-start;
+    padding-top:3rem;
+    width:48%;
+/*     border:1px solid black; */
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    
+/*     display:inline-block; */
+}
+.form-details input
+{
+    transition: all 0.5s ease-in-out;
+}
+[type]:not(button)
+{
+/*     widht:300px; */
+    padding:0.6rem;
+    height:2.4rem;
+    color:white;
+    
+    
+   	background-color:transparent;
+    
+}
+#form-button
+{
+
+    background-color:transparent;
+    border:1px solid white;
+    font-size:0.7rem;
+    color:white;
+    padding: .4rem 1.2rem;
+
+    
+}
+input:focus,textarea:focus
+{
+    outline:none;
+    color:white;
+    font-size:1.4rem;
+}
+.form-details input
+{
+
+    border:none;
+    border-bottom:2px solid white;
+/*     display:inline-block; */
+    width:80%;
+/*     margin:1rem auto; */
+/*     border-bottom:2px solid black; */
+}
+
+.information
+{
+    
+    width:48%;
+/*     border:1px solid black; */
+}
+.information p
+{
+    font-size:1.2rem;
+    word-wrap:break-word;
+    padding:7px;
+}
+.address span
+{
+    font-size:1rem;
+    padding-top:1rem;
+}
+.address span:nth-child(1)
+{
+    font-weight:bold;
+    font-size:2.3rem;
+}
+.fd
+{
+    font-size:1rem;
+}
+.address i
+{
+   padding-left:0.4rem;
+}
+.contact-heading i:first-child
+{
+    font-size:40px;
+}
+.heading-h3
+{
+    font-size:40px;
+    
+    
+}
+.horizontal-list li
+{
+    padding-left:3rem;
+    padding-top:1rem;
+}
